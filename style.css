@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-
   background: linear-gradient(
     -45deg,
     #0b0f14,
@@ -19,77 +18,107 @@ body {
 }
 
 @keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* HEADER */
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  background: rgba(0,0,0,0.4);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* HERO */
 header {
   text-align: center;
   padding: 120px 20px;
 }
 
-header h1 {
-  font-size: 72px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 20px;
-  opacity: 0.9;
-}
-
-header button {
-  margin-top: 30px;
-  padding: 14px 32px;
-  font-size: 16px;
-  background: #2563eb;
-  color: white;
-  border: none;
+button {
+  padding: 12px 24px;
   border-radius: 10px;
-  opacity: 0.6;
-  cursor: not-allowed;
+  border: none;
 }
 
-/* FEATURES */
+/* SECTIONS */
 .features {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 60px 20px;
-  flex-wrap: wrap;
 }
 
 .card {
-  width: 260px;
-  padding: 30px;
-  border-radius: 18px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(14px);
+  width: 240px;
+  padding: 24px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
   text-align: center;
 }
 
-/* DEV SECTION */
-.dev {
+.kid-devs {
   text-align: center;
-  padding: 70px 20px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(14px);
-  margin: 40px 20px;
-  border-radius: 18px;
+  padding: 80px 20px;
+  background: rgba(0,0,0,0.35);
+  margin: 40px;
+  border-radius: 20px;
 }
 
-/* FOOTER */
+/* AUTH */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-box {
+  background: rgba(0,0,0,0.4);
+  padding: 40px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.warning {
+  color: #facc15;
+  font-size: 14px;
+}
+
+.small {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   font-size: 14px;
-  color: #cbd5f5;
+  opacity: 0.7;
 }
