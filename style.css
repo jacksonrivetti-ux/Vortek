@@ -6,13 +6,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background: linear-gradient(
-    -45deg,
-    #0b0f14,
-    #1e1b4b,
-    #312e81,
-    #4c1d95
-  );
+  background: linear-gradient(-45deg, #0b0f14, #1e1b4b, #312e81, #4c1d95);
   background-size: 400% 400%;
   animation: gradientMove 20s ease infinite;
 }
@@ -23,7 +17,6 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* NAV */
 nav {
   display: flex;
   justify-content: space-between;
@@ -31,31 +24,25 @@ nav {
 }
 
 .nav-btn {
-  color: white;
   text-decoration: none;
-  background: rgba(0,0,0,0.4);
+  color: white;
+  margin-left: 10px;
   padding: 8px 16px;
+  background: rgba(0,0,0,0.4);
   border-radius: 8px;
 }
 
-/* HERO */
 header {
   text-align: center;
   padding: 120px 20px;
 }
 
-button {
-  padding: 12px 24px;
-  border-radius: 10px;
-  border: none;
-}
-
-/* SECTIONS */
 .features {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 60px 20px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -75,7 +62,6 @@ button {
   border-radius: 20px;
 }
 
-/* AUTH */
 .centered {
   display: flex;
   justify-content: center;
@@ -87,7 +73,7 @@ button {
   background: rgba(0,0,0,0.4);
   padding: 40px;
   border-radius: 20px;
-  width: 300px;
+  width: 320px;
   text-align: center;
 }
 
@@ -100,10 +86,16 @@ button {
 }
 
 .primary-btn {
+  display: inline-block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
   background: #2563eb;
   color: white;
-  width: 100%;
-  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .warning {
@@ -119,6 +111,5 @@ button {
 footer {
   text-align: center;
   padding: 20px;
-  font-size: 14px;
   opacity: 0.7;
 }
